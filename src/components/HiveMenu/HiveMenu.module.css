@@ -1,11 +1,15 @@
 .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   position: relative;
   width: 600px;
   height: 600px;
-  margin: 100px auto;
+  /* transform: translate(-50%, -50%); */
 }
 
-.hex {  
+.hex {
   width: 200px;
   height: 200px;
   background: teal;
@@ -20,32 +24,27 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgb(0, 0, 0);
+  color: black;
   cursor: pointer;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: transform 0.5s ease;
   font-family: 'Lora', sans-serif;
 }
 
-.span{
-  font-size: 36px;  
-}
 
 .center {
+  top: 50%;
+  left: 50%;
+  /* transform: translate(-50%, -50%); */
   z-index: 10;
   background: white;
 }
 
 .item {
-  background: rgb(0, 0, 0);
+  top: 50%;
+  left: 50%;
+  background: black;
+  transform: none;
+  color: white;
+  
 }
 
-.pos1 { transform: translate(-50%, -50%) translate(0, -260px); }
-.pos2 { transform: translate(-50%, -50%) translate(225px, -130px); }
-.pos3 { transform: translate(-50%, -50%) translate(225px, 130px); }
-.pos4 { transform: translate(-50%, -50%) translate(0, 260px); }
-.pos5 { transform: translate(-50%, -50%) translate(-225px, 130px); }
-.pos6 { transform: translate(-50%, -50%) translate(-225px, -130px); }

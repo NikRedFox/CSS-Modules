@@ -1,6 +1,8 @@
 .container{
+  position: relative;
   display: flex;
-  gap: 200px;
+  align-items: center;
+  justify-content: center;
   padding: 40px;
   z-index: 1;
   background-color:  rgba(5, 114, 47, 1);
