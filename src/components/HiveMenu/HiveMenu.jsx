@@ -10,7 +10,7 @@ export default function HiveMenu() {
         className={`${styles.hex} ${styles.center}`}
         onClick={() => setActive(!active)}
       >
-        <span>Explorar</span>
+        <span className={styles.span}>Explorar</span>
       </div>
 
       <div className={`${styles.hex} ${styles.item} ${active ? styles.pos1 : ""}`}></div>

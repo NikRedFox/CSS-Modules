@@ -1,13 +1,13 @@
 .menu {
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 600px;
+  height: 600px;
   margin: 100px auto;
 }
 
-.hex {
-  width: 80px;
-  height: 80px;
+.hex {  
+  width: 200px;
+  height: 200px;
   background: teal;
   clip-path: polygon(
     50% 0%,
@@ -20,45 +20,32 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: rgb(0, 0, 0);
   cursor: pointer;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: transform 0.5s ease;
+  font-family: 'Lora', sans-serif;
+}
+
+.span{
+  font-size: 36px;  
 }
 
 .center {
   z-index: 10;
-  background: crimson;
+  background: white;
 }
 
 .item {
-  background: steelblue;
+  background: rgb(0, 0, 0);
 }
 
-/* posições quando ativo */
-.pos1 {
-  transform: translate(-50%, -50%) translate(0, -120px);
-}
-
-.pos2 {
-  transform: translate(-50%, -50%) translate(104px, -60px);
-}
-
-.pos3 {
-  transform: translate(-50%, -50%) translate(104px, 60px);
-}
-
-.pos4 {
-  transform: translate(-50%, -50%) translate(0, 120px);
-}
-
-.pos5 {
-  transform: translate(-50%, -50%) translate(-104px, 60px);
-}
-
-.pos6 {
-  transform: translate(-50%, -50%) translate(-104px, -60px);
-}
+.pos1 { transform: translate(-50%, -50%) translate(0, -260px); }
+.pos2 { transform: translate(-50%, -50%) translate(225px, -130px); }
+.pos3 { transform: translate(-50%, -50%) translate(225px, 130px); }
+.pos4 { transform: translate(-50%, -50%) translate(0, 260px); }
+.pos5 { transform: translate(-50%, -50%) translate(-225px, 130px); }
+.pos6 { transform: translate(-50%, -50%) translate(-225px, -130px); }
