@@ -1,21 +1,106 @@
-.header {
-  background: #fff;
-  padding: 20px;
-  border-bottom: 1px solid #ddd;
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 20px;
+  background-color: rgb(171, 174, 177);
+  background-image: url(../../assets/gif1.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain ;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Lora', sans-serif;
 }
 
-.title {
-  font-family: 'Inter', sans-serif;
-  font-size: 2rem;
-  color: #333;
+.tint{
+  position: absolute;
+  background: linear-gradient(rgba(92, 100, 90, 0.5) 50%, rgba(92, 100, 90, 0.5) 80%, rgba(26, 126, 1, 1) 99%);
+  width: 100%;
+  height: 100%;
 }
 
-.container a {
-  color: #555;
-  margin: 0 15px;
-  text-decoration: none;
+.titleContainer{
+  width: 500px;
+  height: 520px;
+  background: radial-gradient(rgba(124, 57, 18, 0.4), rgba(0, 128, 0, 0.4), rgba(5, 114, 47, 0.7));
+  clip-path: polygon(
+    50% 0%,
+    100% 25%,
+    100% 75%,
+    50% 100%,
+    0% 75%,
+    0% 25%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
 }
 
-.container a:hover {
-  text-decoration: underline;
+.title{
+  font-size: 70px;
+  color: black;
+  z-index: 1;
+}
+
+.subTitle{
+  font-size: 30px;
+  color: black;
+  z-index: 1;
+}
+
+.hexagono{ 
+  position: absolute;
+  width: 200px;
+  height: 220px;
+  
+  clip-path: polygon(
+    50% 0%,
+    100% 25%,
+    100% 75%,
+    50% 100%,
+    0% 75%,
+    0% 25%
+  );
+  background-position: center;
+  background-size: cover;
+  transition: ease 0.4s;
+}
+ .hexagono:hover{
+  transform: scale(1.05);
+ }
+
+.hex1{
+  background-image: url('./src/assets/minimalistaGif2.gif');
+  top: 2%;
+  left: 2%;
+}
+
+.hex2{
+  background-image: url('./src/assets/minimalistaGif3.gif');
+  top: 32%;
+  left: 9.7%;
+}
+
+.hex3{
+  background-image: url('./src/assets/minimalistaGif5.gif');
+  transform: scale(2);
+  top: -13%;
+  right: -3%;
+
+}
+.hex4{
+  background-image: url('./src/assets/minimalistaGif4.gif');
+  top: 62%;
+  left: 2%;
+
+}
+.hex5{
+  background-image: url('./src/assets/minimalistaGif6.gif');
+  top: 42%;
+  right: 10%;
+
 }
