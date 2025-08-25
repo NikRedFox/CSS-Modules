@@ -12,9 +12,10 @@ export default function Hero() {
     return(
         <>            
             <div className={styles.container}> 
-                {/* <div className={styles.paragraphContainer}>
-                  <p className={styles.paragraph}>CSS Modules é um sistema que gera nomes únicos para classes, evitando conflitos de estilos.</p>
-                </div>    */}
+                <div className={styles.paragraphContainer}>
+                  <h1>Explorando o CSS Modules</h1>
+                </div>   
+                
                 <HiveMenu/>
                 {/* <div className={styles.paragraphContainer}>
                 <p className={styles.paragraph}>CSS Modules é um sistema que gera nomes únicos para classes, evitando conflitos de estilos.</p>

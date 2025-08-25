@@ -17,7 +17,7 @@ export default function HiveMenu() {
   return (
     <div className={styles.menu}>
       <div
-        className={`${styles.hex} ${styles.center}`}
+        className={`${styles.center}`}
         onClick={() => setActive(!active)}
       >
         <span className={styles.span}>Explorar</span>
