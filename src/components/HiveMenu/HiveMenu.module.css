@@ -3,14 +3,13 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 600px;
-  height: 600px;
+  margin-top: 600px;
   transform: translate(0%, 50%);
 }
 
 .hex {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   background: teal;
   clip-path: polygon(
     50% 0%,
@@ -31,8 +30,8 @@
 
 
 .center {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   clip-path: polygon(
     50% 0%,
     100% 25%,
@@ -59,3 +58,24 @@
   
 }
 
+/*-------------------modal-------------------*/
+
+.modalBackdrop{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.modalContent{
+  background: white;
+  padding: 30px;
+  height: 90%;
+  width: 70%;
+  border-radius: 12px;
+  text-align: center;
+}

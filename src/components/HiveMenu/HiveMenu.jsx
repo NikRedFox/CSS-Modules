@@ -1,9 +1,10 @@
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import styles from "./HiveMenu.module.css";
 
 export default function HiveMenu() {
   const [active, setActive] = useState(false);
+  const [selectedItem, setSelectedItem] = useState(null);
 
   const positions = [
     { x: 0, y: -260, label: "Item 1" },
@@ -36,10 +37,32 @@ export default function HiveMenu() {
           transition={{ type: "spring", stiffness: 300, damping: 20 }}
           whileTap={{ scale: 0.9 }}
           whileHover={{ scale: 1.1 }}
+          onClick={()=> setSelectedItem(pos)}
         >
           <span>{pos.label}</span>
         </motion.div>
       ))}
+
+      <AnimatePresence>
+        {selectedItem && (
+          <motion.div
+            className={styles.modalBackdrop}
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
+            exit={{opacity: 0}}>
+
+              <motion.div
+                className={styles.modalContent}
+                initial={{scale: 0.8, opacity: 0}}
+                animate={{scale: 1, opacity: 1}}
+                exit={{opacity: 0}}
+              >
+                <h2>{selectedItem.label}</h2>
+                <p>{selectedItem.content}</p>
+                <button onClick={()=> setSelectedItem(null)}>Fechar</button>
+              </motion.div>
+          </motion.div>)}
+      </AnimatePresence>
     </div>
   );
 }
